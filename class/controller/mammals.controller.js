@@ -8,6 +8,10 @@ class MammalsController {
     getSound () {
         this.mammalsService.getSound()
     }
+
+    async getAll() {
+        return await this.mammalsService.getAll()
+    }
 }
 
 module.exports = MammalsController

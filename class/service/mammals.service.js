@@ -8,6 +8,10 @@ class MammalsService {
     getSound() {
         this.mammalsModel.animalSound()
     }
+
+    async getAll() {
+        return await this.mammalsModel.findAll()
+    }
 }
 
 module.exports = MammalsService
