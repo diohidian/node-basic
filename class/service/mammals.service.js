@@ -1,5 +1,7 @@
+const Mammals = require("../model/animal.model")
+
 class MammalsService {
-    constructor(mammalsModel) {
+    constructor() {
         this.mammalsModel = new Mammals
     }
 
@@ -7,3 +9,5 @@ class MammalsService {
         this.mammalsModel.animalSound()
     }
 }
+
+module.exports = MammalsService

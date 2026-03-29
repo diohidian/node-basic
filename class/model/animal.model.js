@@ -15,3 +15,5 @@ class Animal {
 class Mammals extends Animal {
     
 }
+
+module.exports = Mammals

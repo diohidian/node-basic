@@ -1,5 +1,7 @@
+const MammalsService = require("../service/mammals.service")
+
 class MammalsController {
-    constructor(mammalsService) {
+    constructor() {
         this.mammalsService = new MammalsService();
     }
 
@@ -7,3 +9,5 @@ class MammalsController {
         this.mammalsService.getSound()
     }
 }
+
+module.exports = MammalsController
