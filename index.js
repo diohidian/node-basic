@@ -6,6 +6,10 @@ async function main() {
     mammalsController.getSound();
     const mammals = await mammalsController.getAll();
     console.log(mammals);
+    const horse = {name: "horse", type: "Mammals", habitat: "farm"}
+    await mammalsController.store(horse)
+    
+    
     
   } catch (error) {
     console.error(error);
